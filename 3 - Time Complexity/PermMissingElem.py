@@ -102,4 +102,25 @@ def solution_maths(a):
     n = len(a) + 1
     expected = int(n*(n+1)/2)
 
+    # expected = 0
+    # for n in range(1, len(a)+1):
+    #     expected += n
+
+    return expected - sum(a)
+
+
+def solution_not_submitted(a):
+    """
+    This implementation doesn't need sorting or search
+    Just O(N) time to total up the array.
+
+    I didn't try submitting this solution.  I wonder if the
+    O(2N) solution would have fast enough to meet the time.
+    Based on Josh's complaint, I'm guessing it wasn't.
+
+    """
+    expected = 0
+    for n in range(1, len(a)+1):
+        expected += n
+
     return expected - sum(a)
